@@ -1,0 +1,193 @@
+/* General Section Styling */
+.careerBanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #111A94, #257BFC);
+  padding: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Content Styling */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  z-index: 5;
+}
+
+/* Title Styling */
+.title {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 2.5rem;
+  color: white;
+  margin: 0;
+}
+
+/* Organizer Label Styling */
+.organizerLabel p {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  margin: 0;
+}
+
+/* Buttons Container */
+.treebuttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Button Styling */
+.treebuttons a,
+.bottomButton a {
+  display: block;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  color: #111A94;
+  background-color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px 35px;
+  border-radius: 15px;
+  font-weight: 700;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  
+}
+
+.treebuttons a:hover,
+.bottomButton a:hover {
+  transform: scale(1.05);
+  background-color: #f0f0f0;
+}
+
+
+
+.bottomButton a {
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .treebuttons a,
+  .bottomButton a {
+    font-size: 1.5rem;
+    padding: 18px 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .treebuttons a,
+  .bottomButton a {
+    font-size: 0.8rem;
+    padding: 16px 20px;
+  }
+}
+
+
+@keyframes move1 {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes move2 {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
+.microball1{display: none;}
+.microball2{display: none;}
+.microball3{display: none;}
+.microball4{display: none;}
+.microball5{display: none;}
+.microball6{display: none;}
+
+@media (max-width: 768px) {
+  
+  .microball1{
+    display: block;
+    position: absolute;
+    left: 87%;
+    top:15%;
+  
+    animation: move2 3s ease-in-out infinite;
+  }
+  .microball2{
+    display: block;
+    position: absolute;
+    left: -10%;
+    top: 63%;
+    animation: move2 3s ease-in-out infinite;
+  }
+  .microball3{
+    display: block;
+    position: absolute;
+    left: -3%;
+    top: 77%;
+    animation: move1 3s ease-in-out infinite;
+  }
+  .microball4{
+    display: block;
+    position: absolute;
+    left: -10%;
+    top: 7%;
+    animation: move1 3s ease-in-out infinite;
+    width: 90px;
+    height: 90px;
+  }
+  .microball5{
+    display: block;
+    position: absolute;
+    left: 93%;
+    top: 58%;
+    animation: move1 3s ease-in-out infinite;
+  }
+   .microball6{
+    display: block;
+    position: absolute;
+    left: 87%;
+    top: 73%;
+    height:40px;
+    width:40px;
+    animation: move2 3s ease-in-out infinite;
+  }
+}
+
+.backgroundImage {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%; /* Повна ширина */
+  height: 100vh; /* Повна висота екрану */
+  overflow: hidden; 
+}
+
+.backgroundImage img {
+  width: 100%; /* Зображення займає всю ширину контейнера */
+  height: 100%; /* Зображення займає всю висоту контейнера */
+  object-fit: cover; /* Масштабує зображення, зберігаючи пропорції, і обрізає зайве */
+  object-position: center; /* Центрує зображення */
+}
