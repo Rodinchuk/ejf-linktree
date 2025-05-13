@@ -90,7 +90,7 @@
 
 @media (max-width: 480px) {
   .title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .treebuttons a,
@@ -161,7 +161,7 @@
   .microball5{
     display: block;
     position: absolute;
-    left: 88%;
+    left: 83%;
     top: 78%;
     animation: move1 3s ease-in-out infinite;
     overflow: hidden;
@@ -169,7 +169,7 @@
    .microball6{
     display: block;
     position: absolute;
-    left: 80%;
+    left: 75%;
     top: 85%;
     height:40px;
     width:40px;
