@@ -23,7 +23,7 @@
 /* Title Styling */
 .title {
   font-family: 'Exo 2', sans-serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: white;
   margin: 0;
 }
@@ -78,7 +78,7 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .title {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .treebuttons a,
@@ -90,7 +90,7 @@
 
 @media (max-width: 480px) {
   .title {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 
   .treebuttons a,
@@ -161,7 +161,7 @@
   .microball5{
     display: block;
     position: absolute;
-    left: 83%;
+    left: 88%;
     top: 78%;
     animation: move1 3s ease-in-out infinite;
     overflow: hidden;
@@ -169,7 +169,7 @@
    .microball6{
     display: block;
     position: absolute;
-    left: 75%;
+    left: 80%;
     top: 85%;
     height:40px;
     width:40px;
