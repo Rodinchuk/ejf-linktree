@@ -62,20 +62,12 @@
   
 }
 
-.treebuttons a:hover,
-.bottomButton a:hover {
-  transform: scale(1.05);
-  background-color: #f0f0f0;
-}
-
-
 
 .bottomButton a {
   width: 100%;
   max-width: 300px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .title {
     font-size: 2.5rem;
