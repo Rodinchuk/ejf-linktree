@@ -1,5 +1,6 @@
 import styles from "@/app/components/HeroSection.module.css";
 import Emoji from "@/app/components/Emoji";
+import Link from "next/link";
 
 export default function CareerFairBanner() {
 return (
@@ -28,6 +29,30 @@ return (
                 Сайт <Emoji symbol="🔗" />
 
             </a>
+            {/* <div className={styles.sm}>
+                <Link href="https://www.instagram.com/best_lviv/" className="link"><div className={styles.buttonsm} href="https://www.instagram.com/best_lviv/">
+                <img
+                className={styles.tiktok} 
+                src="./images/instagram.svg"/></div></Link>
+                <Link href="https://www.tiktok.com/@best__lviv/" className="link"> <div className={styles.buttonsm} href="https://www.tiktok.com/@best__lviv">
+                <img 
+                className={styles.tiktok} 
+                src="./images/tik_tok.svg"/></div></Link>
+            </div> */}
+<div className={styles.sm}>
+  <Link href="https://www.instagram.com/best_lviv/" className={styles.link}>
+    <div className={styles.buttonsm}>
+      <img className={styles.instagram} src="./images/instagram.svg" alt="Instagram" />
+    </div>
+  </Link>
+
+  <Link href="https://www.tiktok.com/@best__lviv/" className={styles.link}>
+    <div className={styles.buttonsm}>
+      <img className={styles.tiktok} src="./images/tik_tok.svg" alt="TikTok" />
+    </div>
+  </Link>
+</div>
+
         </div>
         <div className={styles.microImages}>
           
